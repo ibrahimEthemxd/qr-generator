@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html,
+body{
+    font-family: "Della Respira", serif;
+    background: linear-gradient(1281deg, #fd8a91, #17da61) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.7);
+}
+h1{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 22px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    margin: 6px 0 1rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+button:hover{
+    opacity: 0.8;
+}
+#generate-btn{
+    background-color: #17da61;
+}
+#save-btn{
+    background-color: #fd8a91;
+}
+#qr-code{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    transform: scale(0.5);
+    transition: all 0.4s ease;
+}
+.input{
+    position: relative;
+}
+.clear{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    background-color: rgb(57, 57, 130);
+}
+.clear:active{
+    transform: scale(0.98);
+}

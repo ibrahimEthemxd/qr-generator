@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kare Kodu (QR) Oluşturucu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>İEÖ - Kare Kod Oluşturucu</h1>
+      <label for="qr-text">Yazı veya Bağlantı Adresi</label>
+      <div class="input">
+        <input type="text" id="qr-text" />
+        <button class="clear"><i class="bi bi-trash"></i></button>
+      </div>
+
+      <div class="btn">
+        <button id="generate-btn">Kare Kod Oluştur</button>
+        <button id="save-btn">Kare Kodu Kaydet</button>
+      </div>
+      <div id="qr-code"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
